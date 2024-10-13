@@ -1,46 +1,47 @@
-[
-  {
-    "data": "{"type":"node","id":"0","labels":["User"],"properties":{"user_id":103}}
-{"type":"node","id":"1","labels":["Event"],"properties":{"event_id":100,"event_description":"This is a test event","event_name":"Test Event","timestamp":"2024-10-12 10:00:00"}}
-{"type":"node","id":"3","labels":["Event"],"properties":{"event_id":1,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T10:00Z"}}
-{"type":"node","id":"4","labels":["Event"],"properties":{"event_id":2,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:05Z"}}
-{"type":"node","id":"5","labels":["Event"],"properties":{"event_id":3,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T10:30Z"}}
-{"type":"node","id":"6","labels":["Event"],"properties":{"event_id":4,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:35Z"}}
-{"type":"node","id":"7","labels":["Event"],"properties":{"event_id":5,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:00Z"}}
-{"type":"node","id":"8","labels":["Event"],"properties":{"event_id":6,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T11:10Z"}}
-{"type":"node","id":"9","labels":["Event"],"properties":{"event_id":7,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T11:15Z"}}
-{"type":"node","id":"10","labels":["Event"],"properties":{"event_id":9,"event_name":"End Process","status":"Ended","timestamp":"2024-09-19T12:00Z"}}
-{"type":"node","id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}
-{"type":"node","id":"36","labels":["User"],"properties":{"user_id":102}}
-{"type":"node","id":"37","labels":["Process"],"properties":{"process_id":202,"status":"Completed"}}
-{"type":"node","id":"38","labels":["User"],"properties":{"user_id":101}}
-{"type":"node","id":"40","labels":["Event"],"properties":{"event_id":8,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:45Z"}}
-{"type":"relationship","id":"1152937997281263619","label":"NEXT_EVENT","start":{"id":"3","labels":["Event"],"properties":{"event_id":1,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T10:00Z"}},"end":{"id":"4","labels":["Event"],"properties":{"event_id":2,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:05Z"}}}
-{"type":"relationship","id":"1152939096792891395","label":"BELONGS_TO_PROCESS","start":{"id":"3","labels":["Event"],"properties":{"event_id":1,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T10:00Z"}},"end":{"id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}}
-{"type":"relationship","id":"1152940196304519171","label":"PERFORMED_BY","start":{"id":"3","labels":["Event"],"properties":{"event_id":1,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T10:00Z"}},"end":{"id":"38","labels":["User"],"properties":{"user_id":101}}}
-{"type":"relationship","id":"1152937997281263620","label":"NEXT_EVENT","start":{"id":"4","labels":["Event"],"properties":{"event_id":2,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:05Z"}},"end":{"id":"5","labels":["Event"],"properties":{"event_id":3,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T10:30Z"}}}
-{"type":"relationship","id":"1152939096792891396","label":"BELONGS_TO_PROCESS","start":{"id":"4","labels":["Event"],"properties":{"event_id":2,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:05Z"}},"end":{"id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}}
-{"type":"relationship","id":"1152940196304519172","label":"PERFORMED_BY","start":{"id":"4","labels":["Event"],"properties":{"event_id":2,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:05Z"}},"end":{"id":"38","labels":["User"],"properties":{"user_id":101}}}
-{"type":"relationship","id":"1152937997281263621","label":"NEXT_EVENT","start":{"id":"5","labels":["Event"],"properties":{"event_id":3,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T10:30Z"}},"end":{"id":"6","labels":["Event"],"properties":{"event_id":4,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:35Z"}}}
-{"type":"relationship","id":"1152939096792891397","label":"BELONGS_TO_PROCESS","start":{"id":"5","labels":["Event"],"properties":{"event_id":3,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T10:30Z"}},"end":{"id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}}
-{"type":"relationship","id":"1152940196304519173","label":"PERFORMED_BY","start":{"id":"5","labels":["Event"],"properties":{"event_id":3,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T10:30Z"}},"end":{"id":"38","labels":["User"],"properties":{"user_id":101}}}
-{"type":"relationship","id":"1152937997281263622","label":"NEXT_EVENT","start":{"id":"6","labels":["Event"],"properties":{"event_id":4,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:35Z"}},"end":{"id":"7","labels":["Event"],"properties":{"event_id":5,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:00Z"}}}
-{"type":"relationship","id":"1152939096792891398","label":"BELONGS_TO_PROCESS","start":{"id":"6","labels":["Event"],"properties":{"event_id":4,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:35Z"}},"end":{"id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}}
-{"type":"relationship","id":"1152940196304519174","label":"PERFORMED_BY","start":{"id":"6","labels":["Event"],"properties":{"event_id":4,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T10:35Z"}},"end":{"id":"36","labels":["User"],"properties":{"user_id":102}}}
-{"type":"relationship","id":"1152937997281263623","label":"NEXT_EVENT","start":{"id":"7","labels":["Event"],"properties":{"event_id":5,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:00Z"}},"end":{"id":"10","labels":["Event"],"properties":{"event_id":9,"event_name":"End Process","status":"Ended","timestamp":"2024-09-19T12:00Z"}}}
-{"type":"relationship","id":"1152939096792891399","label":"BELONGS_TO_PROCESS","start":{"id":"7","labels":["Event"],"properties":{"event_id":5,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:00Z"}},"end":{"id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}}
-{"type":"relationship","id":"1152940196304519175","label":"PERFORMED_BY","start":{"id":"7","labels":["Event"],"properties":{"event_id":5,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:00Z"}},"end":{"id":"36","labels":["User"],"properties":{"user_id":102}}}
-{"type":"relationship","id":"1152937997281263624","label":"NEXT_EVENT","start":{"id":"8","labels":["Event"],"properties":{"event_id":6,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T11:10Z"}},"end":{"id":"9","labels":["Event"],"properties":{"event_id":7,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T11:15Z"}}}
-{"type":"relationship","id":"1152939096792891400","label":"BELONGS_TO_PROCESS","start":{"id":"8","labels":["Event"],"properties":{"event_id":6,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T11:10Z"}},"end":{"id":"37","labels":["Process"],"properties":{"process_id":202,"status":"Completed"}}}
-{"type":"relationship","id":"1152940196304519176","label":"PERFORMED_BY","start":{"id":"8","labels":["Event"],"properties":{"event_id":6,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T11:10Z"}},"end":{"id":"0","labels":["User"],"properties":{"user_id":103}}}
-{"type":"relationship","id":"1152937997281263625","label":"NEXT_EVENT","start":{"id":"9","labels":["Event"],"properties":{"event_id":7,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T11:15Z"}},"end":{"id":"40","labels":["Event"],"properties":{"event_id":8,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:45Z"}}}
-{"type":"relationship","id":"1152939096792891401","label":"BELONGS_TO_PROCESS","start":{"id":"9","labels":["Event"],"properties":{"event_id":7,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T11:15Z"}},"end":{"id":"37","labels":["Process"],"properties":{"process_id":202,"status":"Completed"}}}
-{"type":"relationship","id":"1152940196304519177","label":"PERFORMED_BY","start":{"id":"9","labels":["Event"],"properties":{"event_id":7,"event_name":"Task Assigned","status":"Assigned","timestamp":"2024-09-19T11:15Z"}},"end":{"id":"0","labels":["User"],"properties":{"user_id":103}}}
-{"type":"relationship","id":"1152939096792891402","label":"BELONGS_TO_PROCESS","start":{"id":"10","labels":["Event"],"properties":{"event_id":9,"event_name":"End Process","status":"Ended","timestamp":"2024-09-19T12:00Z"}},"end":{"id":"35","labels":["Process"],"properties":{"process_id":201,"status":"Ended"}}}
-{"type":"relationship","id":"1152940196304519178","label":"PERFORMED_BY","start":{"id":"10","labels":["Event"],"properties":{"event_id":9,"event_name":"End Process","status":"Ended","timestamp":"2024-09-19T12:00Z"}},"end":{"id":"38","labels":["User"],"properties":{"user_id":101}}}
-{"type":"relationship","id":"6917547719338754049","label":"PERFORMED_BY","start":{"id":"38","labels":["User"],"properties":{"user_id":101}},"end":{"id":"1","labels":["Event"],"properties":{"event_id":100,"event_description":"This is a test event","event_name":"Test Event","timestamp":"2024-10-12 10:00:00"}}}
-{"type":"relationship","id":"1155191996118204454","label":"PERFORMED_BY","start":{"id":"38","labels":["User"],"properties":{"user_id":101}},"end":{"id":"3","labels":["Event"],"properties":{"event_id":1,"event_name":"Start Process","status":"Started","timestamp":"2024-09-19T10:00Z"}}}
-{"type":"relationship","id":"1152939096792891432","label":"BELONGS_TO_PROCESS","start":{"id":"40","labels":["Event"],"properties":{"event_id":8,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:45Z"}},"end":{"id":"37","labels":["Process"],"properties":{"process_id":202,"status":"Completed"}}}
-{"type":"relationship","id":"1152940196304519208","label":"PERFORMED_BY","start":{"id":"40","labels":["Event"],"properties":{"event_id":8,"event_name":"Complete Task","status":"Completed","timestamp":"2024-09-19T11:45Z"}},"end":{"id":"0","labels":["User"],"properties":{"user_id":103}}}"
-  }
-]
+{
+  "nodes": [
+    {"type": "node", "id": "0", "labels": ["Event"], "properties": {"event_id": 7, "event_name": "Task Assigned", "status": "Assigned", "timestamp": "2024-09-19T11:15Z"}},
+    {"type": "node", "id": "1", "labels": ["Event"], "properties": {"event_id": 8, "event_name": "Complete Task", "status": "Completed", "timestamp": "2024-09-19T11:45Z"}},
+    {"type": "node", "id": "3", "labels": ["User"], "properties": {"user_id": 103}},
+    {"type": "node", "id": "4", "labels": ["User"], "properties": {"user_id": 102}},
+    {"type": "node", "id": "5", "labels": ["Resource"], "properties": {"resource_id": "Server02"}},
+    {"type": "node", "id": "8", "labels": ["Resource"], "properties": {"resource_id": "Server03"}},
+    {"type": "node", "id": "29", "labels": ["Process"], "properties": {"process_id": 201, "status": "Ended"}},
+    {"type": "node", "id": "30", "labels": ["Process"], "properties": {"process_id": 202, "status": "Completed"}},
+    {"type": "node", "id": "31", "labels": ["Event"], "properties": {"event_id": 1, "event_name": "Start Process", "status": "Started", "timestamp": "2024-09-19T10:00Z"}},
+    {"type": "node", "id": "32", "labels": ["Event"], "properties": {"event_id": 2, "event_name": "Task Assigned", "status": "Assigned", "timestamp": "2024-09-19T10:05Z"}},
+    {"type": "node", "id": "33", "labels": ["Event"], "properties": {"event_id": 3, "event_name": "Complete Task", "status": "Completed", "timestamp": "2024-09-19T10:30Z"}},
+    {"type": "node", "id": "34", "labels": ["Event"], "properties": {"event_id": 4, "event_name": "Task Assigned", "status": "Assigned", "timestamp": "2024-09-19T10:35Z"}},
+    {"type": "node", "id": "35", "labels": ["User"], "properties": {"user_id": 101}},
+    {"type": "node", "id": "36", "labels": ["Event"], "properties": {"event_id": 9, "event_name": "End Process", "status": "Ended", "timestamp": "2024-09-19T12:00Z"}},
+    {"type": "node", "id": "38", "labels": ["Resource"], "properties": {"resource_id": "Server01"}},
+    {"type": "node", "id": "39", "labels": ["Event"], "properties": {"event_id": 5, "event_name": "Complete Task", "status": "Completed", "timestamp": "2024-09-19T11:00Z"}},
+    {"type": "node", "id": "41", "labels": ["Event"], "properties": {"event_id": 6, "event_name": "Start Process", "status": "Started", "timestamp": "2024-09-19T11:10Z"}}
+  ],
+  "relationships": [
+    {"type": "relationship", "id": "1152937997281263616", "label": "NEXT_EVENT", "start": {"id": "0"}, "end": {"id": "1"}},
+    {"type": "relationship", "id": "1152939096792891392", "label": "BELONGS_TO_PROCESS", "start": {"id": "0"}, "end": {"id": "30"}},
+    {"type": "relationship", "id": "1152940196304519168", "label": "PERFORMED_BY", "start": {"id": "0"}, "end": {"id": "3"}},
+    {"type": "relationship", "id": "1152941295816146944", "label": "USES_RESOURCE", "start": {"id": "0"}, "end": {"id": "8"}},
+    {"type": "relationship", "id": "1152939096792891393", "label": "BELONGS_TO_PROCESS", "start": {"id": "1"}, "end": {"id": "30"}},
+    {"type": "relationship", "id": "1152940196304519169", "label": "PERFORMED_BY", "start": {"id": "1"}, "end": {"id": "3"}},
+    {"type": "relationship", "id": "1152941295816146945", "label": "USES_RESOURCE", "start": {"id": "1"}, "end": {"id": "8"}},
+    {"type": "relationship", "id": "1152937997281263647", "label": "NEXT_EVENT", "start": {"id": "31"}, "end": {"id": "32"}},
+    {"type": "relationship", "id": "1152939096792891423", "label": "BELONGS_TO_PROCESS", "start": {"id": "31"}, "end": {"id": "29"}},
+    {"type": "relationship", "id": "1152940196304519199", "label": "PERFORMED_BY", "start": {"id": "31"}, "end": {"id": "35"}},
+    {"type": "relationship", "id": "1152941295816146975", "label": "USES_RESOURCE", "start": {"id": "31"}, "end": {"id": "38"}},
+    {"type": "relationship", "id": "1152937997281263648", "label": "NEXT_EVENT", "start": {"id": "32"}, "end": {"id": "33"}},
+    {"type": "relationship", "id": "1152939096792891424", "label": "BELONGS_TO_PROCESS", "start": {"id": "32"}, "end": {"id": "29"}},
+    {"type": "relationship", "id": "1152940196304519200", "label": "PERFORMED_BY", "start": {"id": "32"}, "end": {"id": "35"}},
+    {"type": "relationship", "id": "1152941295816146976", "label": "USES_RESOURCE", "start": {"id": "32"}, "end": {"id": "38"}},
+    {"type": "relationship", "id": "1152937997281263649", "label": "NEXT_EVENT", "start": {"id": "33"}, "end": {"id": "34"}},
+    {"type": "relationship", "id": "1152939096792891425", "label": "BELONGS_TO_PROCESS", "start": {"id": "33"}, "end": {"id": "29"}},
+    {"type": "relationship", "id": "1152940196304519201", "label": "PERFORMED_BY", "start": {"id": "33"}, "end": {"id": "35"}},
+    {"type": "relationship", "id": "1152941295816146977", "label": "USES_RESOURCE", "start": {"id": "33"}, "end": {"id": "38"}},
+    {"type": "relationship", "id": "1152937997281263650", "label": "NEXT_EVENT", "start": {"id": "34"}, "end": {"id": "39"}},
+    {"type": "relationship", "id": "1152939096792891426", "label": "BELONGS_TO_PROCESS", "start": {"id": "34"}, "end": {"id": "29"}},
+    {"type": "relationship", "id": "1152940196304519202", "label": "PERFORMED_BY", "start": {"id": "34"}, "end": {"id": "4"}},
+    {"type": "relationship", "id": "1152941295816146978", "label": "USES_RESOURCE", "start": {"id": "34"}, "end": {"id": "5"}},
+    {"type": "relationship", "id": "1152939096792891428", "label": "BELONGS_TO_PROCESS", "start": {"id": "36"}, "end": {"id": "29"}}
+  ]
+}
